@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="TXT_to_IM.vcxproj" Id="95be61a0-8c23-4bd3-beb4-d154a3b1d7d7" />
+</Solution>
