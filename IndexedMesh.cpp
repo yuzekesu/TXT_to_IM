@@ -1,9 +1,14 @@
 #include "IndexedMesh.h"
+#include <format>
+#include <stdexcept>
 
 IndexedMesh::IndexedMesh(Loader& p) {
 	auto [v, i] = p.Load();
 	this->_vertices = std::move(v);
 	this->_indices = std::move(i);
+	for (auto n : this->_indices) {
+		if (n >= this->_vertices.size()) throw std::runtime_error(std::format("The index {} is out of the range. The range is between 0 ~ {}.", n, this->_vertices.size() - 1));
+	}
 }
 
 std::vector<uint8_t> IndexedMesh::Binary() {
