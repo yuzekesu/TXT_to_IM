@@ -1,8 +1,9 @@
 # How to Use
 1. Create .txt file.
-2. Write the coordinate of the vertex **each ROW** as float, seperate by spaces. You can add comment at the same row if you want, but put it after the coordinate.
+2. Write the coordinate of the vertex **each ROW** as float (the x, y and z), seperate by spaces. You can add comment at the same row if you want, but put it after the coordinate.
 3. Put an empty space or anything that contain no numbers.
 4. Write the indices, add any comment you want with spaces between nearby indices. The program will check if the index is within the range or not.
+5. Drag the .txt onto the .exe OR open the .txt with the .exe to create the .im file.
 
 # Data Structure
 * Header
