@@ -31,7 +31,15 @@ std::tuple <std::vector<Coordinate>, std::vector<uint32_t>> Loader::Load() {
 		unsigned floatCounter = 0;
 		std::vector<float> tempFloatVector;
 		while (stream >> word) {
-			tempFloatVector.push_back(std::stof(word));
+			try {
+				tempFloatVector.push_back(std::stof(word));
+			}
+			catch (...) {
+				// if the parse failed.
+				// either the data is malformed, or the vertices part is end.
+				// let the if statement below to check it.
+				break;
+			}
 			++floatCounter;
 			++loopCounter;
 			if (floatCounter == 3) break;
