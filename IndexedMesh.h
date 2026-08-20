@@ -10,6 +10,6 @@ public:
 	std::vector<uint8_t> Binary();
 private:
 	std::vector<Coordinate> _vertices;
-	std::vector<unsigned> _indices;
+	std::vector<uint32_t> _indices;
 };
 
