@@ -57,7 +57,12 @@ std::tuple <std::vector<Coordinate>, std::vector<uint32_t>> Loader::Load() {
 		std::wistringstream stream{ buffer };
 		std::wstring word;
 		while (stream >> word) {
-			indices.push_back(static_cast<uint32_t>(std::stol(word)));
+			try {
+				indices.push_back(static_cast<uint32_t>(std::stol(word)));
+			}
+			catch (...) {
+				// let it be ;)
+			}
 		}
 	}
 	return { std::move(vertices), std::move(indices) };
