@@ -13,3 +13,16 @@
 * Body
   1. array of the coordinate : {float x,y,z;} as vertices
   2. array of the indices : uint32_t as indices
+
+# Example of a .txt file
+```
+1.0 2.0 3.f hi I am the comment
+1.0 2.f 1.0          or like this
+3.f 2.0 1.0  // or like this
+5 5 5
+LineBreak
+
+The indices starts here haha
+1 2 haha 
+3
+```
