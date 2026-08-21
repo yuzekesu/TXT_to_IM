@@ -4,11 +4,12 @@
 3. Put an empty space or anything that contain no numbers.
 4. Write the indices, add any comment you want with spaces between nearby indices. The program will check if the index is within the range or not.
 5. Drag the .txt onto the .exe OR open the .txt with the .exe to create the .im file.
+6. When reading the .im, make sure your program read with the following data structure in mind.
 
-# Data Structure
+# Data Structure of the .im file
 * Header
-  1. number of vertices : uint64_t
-  2. number of indices : uint64_t
+  1. number of the vertices : uint64_t
+  2. number of the indices : uint64_t
 * Body
-  1. array of cordinate : {float x,y,z;} as vertices
-  2. array of indices : uint32_t as indices
+  1. array of the coordinate : {float x,y,z;} as vertices
+  2. array of the indices : uint32_t as indices
