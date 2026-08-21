@@ -4,7 +4,7 @@
 3. Put an empty space or anything that contain no numbers.
 4. Write the indices, add any comment you want with spaces between nearby indices. The program will check if the index is within the range or not.
 5. Drag the .txt onto the .exe OR open the .txt with the .exe to create the .im file.
-6. When reading/using the generated .im, make sure your own program read with the following data structure in mind.
+6. When reading/using the generated .im, make sure your own program read the .im with the following data structure in mind.
 
 # Data Structure of the .im file
 * Header
